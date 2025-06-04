@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "ELIASEMPRESAS": "github:eliasempresasBot/pxt-eliasempresas#0af78227fa258bd463c655ed4c9df12f1bc66c50"
     },
     "files": [
         "main.blocks",
@@ -20,5 +21,17 @@
     },
     "supportedTargets": [
         "microbit"
-    ]
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 0,
+                    "whitelist": 1,
+                    "security_level": "SECURITY_MODE_ENCRYPTION_WITH_MITM"
+                }
+            }
+        }
+    }
 }
